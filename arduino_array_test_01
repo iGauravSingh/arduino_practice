@@ -1,1 +1,22 @@
 
+
+void setup() {
+  // put your setup code here, to run once:
+  int number[7] = {1,8,3,4,9,1,2};
+  int maxValue = 0;
+  int i = 0;
+  Serial.begin(9600);
+  for(i=0;i<7;i++){
+    if(number[i] > maxValue){
+      maxValue = number[i];
+    }
+  }
+  Serial.println(maxValue);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+
